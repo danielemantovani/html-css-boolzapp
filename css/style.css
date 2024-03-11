@@ -1,3 +1,5 @@
+/* APPROCCIO DEKSTOP FIRST */
+
 /* RESET */
 
 *{
@@ -9,4 +11,99 @@
 img{
     max-width: 100%;
 }
+
+body{
+    background-color: black;
+}
+
+
+/* UTILITIES */
+
+.flex{
+    display: flex;
+}
+
+.m-auto{
+    margin: auto;
+}
+
+
+.wrapper{
+    width: 95%;
+    height: 90vh;
+    background-color: navy;
+    margin-top: 40px;
+}
+
+/* HEADER */
+
+.user{
+    background-color: aquamarine;
+    width: 30%;
+    height: 60px;
+}
+
+.speacker{
+    background-color: brown;
+    width: 70%;
+    height: 60px;
+}
+
+@media screen and (max-width:768px) {
+    .user{
+        width: 10%;
+    }
+
+    .speacker{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .user{
+        display: none;
+    }
+
+    .speacker{
+        width: 100%;
+    }
+}
+
+
+/* MAIN */
+
+.container-sx{
+    width: 30%;
+}
+
+.notice{
+    background-color: azure;
+    height: 60px;
+    width: 100%;
+}
+
+.find{
+    background-color: blanchedalmond;
+    height: 60px;
+    width: 100%;
+}
+
+.contacts{
+    background-color: lightgreen;
+    height: 580px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.message{
+    background-color: lightsalmon;
+    width: 70%;
+    height: 700px;
+}
+
+main{
+    /* justify-content: space-between; */
+}
+
+
 
