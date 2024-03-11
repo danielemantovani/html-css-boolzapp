@@ -49,7 +49,6 @@ APPROCCIO DEKSTOP FIRST
 .user{
     background-color: brown;
     height: 8vh;
-    
 }
 
 .notice{
@@ -87,18 +86,19 @@ APPROCCIO DEKSTOP FIRST
         display: none;
     }
 
-    /* .user{
-    
-    } */
-
     .find{
         display: none;
     }
 
     .contacts{
-        height: 100vh;
+        height: 92vh;
     }
+}
 
+@media screen and (max-width:480px){
+    .container-sx{
+        display: none;
+    }
 }
 
 /* SEZIONE DESTRA WEB APP */
