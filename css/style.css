@@ -46,10 +46,6 @@ APPROCCIO DEKSTOP FIRST
     margin-right: 15px;
 }
 
-.fs-15{
-    font-size: 1.5rem;
-}
-
 .fs-08{
     font-size: 0.8rem;
 }
@@ -69,7 +65,6 @@ APPROCCIO DEKSTOP FIRST
 }
 
 .container-webapp{
-    background-color: white;
     height: 95vh;
     width: 80%;
     display: flex;
@@ -95,7 +90,7 @@ APPROCCIO DEKSTOP FIRST
 
 .tool{
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     letter-spacing: 5px;
     color: #B1B1B1;
 }
@@ -142,7 +137,6 @@ APPROCCIO DEKSTOP FIRST
 .find-input{
     width: 80%;
     padding: 5px;
-    
 }
 
 /* CONTACTS */
@@ -150,6 +144,7 @@ APPROCCIO DEKSTOP FIRST
 .contacts{
     height: 73vh;
     overflow-y: scroll;
+    background-color: white;
 }
 
 .contact{
@@ -215,8 +210,20 @@ APPROCCIO DEKSTOP FIRST
 }
 
 .speacker{
-    background-color: chartreuse;
     height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.container-speacker{
+    align-items: center;
+}
+
+.speacker-tool{
+    letter-spacing: 5px;
+    font-size: 1.1rem;
+    color: grey;
 }
 
 .message{
