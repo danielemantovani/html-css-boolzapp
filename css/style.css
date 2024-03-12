@@ -8,6 +8,7 @@
 
 img{
     max-width: 100%;
+    border-radius: 50%;
 }
 
 body{
@@ -40,13 +41,16 @@ APPROCCIO DEKSTOP FIRST
 .wrapper{
     width: 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-webapp{
     background-color: black;
-    height: 80vh;
+    height: 95vh;
     width: 80%;
-    margin-top: 50px;
+    display: flex;
 }
 
 
@@ -55,29 +59,42 @@ APPROCCIO DEKSTOP FIRST
 .container-sx{
     background-color: lightpink;
     width: 30%;
-    height: 80vh;
+    height: 95vh;
 }
 
 .user{
-    background-color: brown;
+    background-color: #EAEAEA;
     height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.io{
+    width: 7vh;
+    height: 7vh;
+}
+
+.tool{
+    display: inline-block;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    color: #B1B1B1;
 }
 
 .notice{
     background-color: blue;
     height: 8vh;
-    
 }
 
 .find{
     background-color: chocolate;
     height: 6vh;
-    
 }
 
 .contacts{
     background-color: lightseagreen;
-    height: 58vh;
+    height: 73vh;
     overflow-y: scroll;
 }
 
@@ -118,7 +135,7 @@ APPROCCIO DEKSTOP FIRST
 .container-dx{
     background-color: lightcyan;
     width: 70%;
-    height: 80vh;
+    height: 95vh;
 }
 
 .speacker{
@@ -128,7 +145,7 @@ APPROCCIO DEKSTOP FIRST
 
 .message{
     background-color: lightcoral;
-    height: 64vh;
+    height: 79vh;
     overflow-y: scroll;
 }
 
