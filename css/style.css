@@ -9,6 +9,8 @@
 img{
     max-width: 100%;
     border-radius: 50%;
+    width: 7vh;
+    height: 7vh;
 }
 
 body{
@@ -32,8 +34,28 @@ APPROCCIO DEKSTOP FIRST
     display: flex;
 }
 
-.m-auto{
-    margin: auto;
+.bg{
+    background-color: #EAEAEA;
+}
+
+.color-lg{
+    color: lightgray;
+}
+
+.mr{
+    margin-right: 15px;
+}
+
+.fs-15{
+    font-size: 1.5rem;
+}
+
+.fs-08{
+    font-size: 0.8rem;
+}
+
+.fs-06{
+    font-size: 0.6rem;
 }
 
 /* LAYOUT */
@@ -47,7 +69,7 @@ APPROCCIO DEKSTOP FIRST
 }
 
 .container-webapp{
-    background-color: black;
+    background-color: white;
     height: 95vh;
     width: 80%;
     display: flex;
@@ -57,23 +79,19 @@ APPROCCIO DEKSTOP FIRST
 /* SEZIONE SINISTRA WEB APP */
 
 .container-sx{
-    background-color: lightpink;
     width: 30%;
     height: 95vh;
 }
 
+/* HEADER */
+
 .user{
-    background-color: #EAEAEA;
     height: 8vh;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
 }
 
-.io{
-    width: 7vh;
-    height: 7vh;
-}
 
 .tool{
     display: inline-block;
@@ -82,20 +100,70 @@ APPROCCIO DEKSTOP FIRST
     color: #B1B1B1;
 }
 
+/* NOTICE */
+
 .notice{
-    background-color: blue;
+    background-color: #8EDAFC;
     height: 8vh;
+    align-items: center;
 }
+
+.bell-notice{
+    background-color: white;
+    color:#8EDAFC ;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.notice-on{
+    display: block;
+    color:grey;
+}
+
+/* FIND BAR */
 
 .find{
-    background-color: chocolate;
     height: 6vh;
+    align-items: center;
 }
 
+.find-bar{
+    height: 4vh;
+}
+
+.lent{
+    background-color: white;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.find-input{
+    width: 80%;
+    padding: 5px;
+    
+}
+
+/* CONTACTS */
+
 .contacts{
-    background-color: lightseagreen;
     height: 73vh;
     overflow-y: scroll;
+}
+
+.contact{
+    padding: 30px 10px;
+    height: 8vh;
+    align-items: center;
+    position: relative;
+    /* margin-bottom: 15px; */
+}
+
+.time{
+    position: absolute;
+    top: 10px;
+    right: 8px;
 }
 
 @media screen and (max-width:768px) {
@@ -111,6 +179,10 @@ APPROCCIO DEKSTOP FIRST
         width: 10%;
     }
 
+    .tool{
+        display: none;
+    }
+
     .notice{
         display: none;
     }
@@ -121,6 +193,10 @@ APPROCCIO DEKSTOP FIRST
 
     .contacts{
         height: 92vh;
+    }
+
+    .contact > div{
+        display: none;
     }
 }
 
