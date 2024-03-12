@@ -14,13 +14,11 @@ img{
     object-fit: cover;
 }
 
-body{
-    background-color: lightgray;
+button{
+    border: none;
+    cursor: pointer;
 }
 
-/* ****************************
-APPROCCIO DEKSTOP FIRST
-**************************** */
 
 /* UTILITIES */
 
@@ -44,6 +42,10 @@ APPROCCIO DEKSTOP FIRST
     margin-right: 15px;
 }
 
+.fs-13{
+    font-size: 1.3rem;
+}
+
 .fs-08{
     font-size: 0.8rem;
 }
@@ -60,6 +62,7 @@ APPROCCIO DEKSTOP FIRST
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to top, #D3DBDB, #DCDBD1 80%, #009688 80% );
 }
 
 .container-webapp{
@@ -76,7 +79,7 @@ APPROCCIO DEKSTOP FIRST
     height: 95vh;
 }
 
-/* HEADER */
+/* USER */
 
 .user{
     height: 8vh;
@@ -124,19 +127,23 @@ APPROCCIO DEKSTOP FIRST
 }
 
 .find-bar{
-    height: 4vh;
+    height: 5vh;
 }
 
 .lent{
     background-color: white;
-    padding: 5px;
-    margin-left: 10px;
+    padding: 7px;
+    width: 50px;
+    margin-left: 6px;
 }
 
 .find-input{
-    width: 80%;
-    padding: 5px;
+    border: none; 
+    padding: 7px;  
+    width: 295px; 
+    height: 5vh;
 }
+
 
 /* CONTACTS */
 
@@ -151,7 +158,6 @@ APPROCCIO DEKSTOP FIRST
     height: 8vh;
     align-items: center;
     position: relative;
-    /* margin-bottom: 15px; */
 }
 
 .time{
@@ -160,50 +166,10 @@ APPROCCIO DEKSTOP FIRST
     right: 8px;
 }
 
-@media screen and (max-width:768px) {
-
-    .container-webapp{
-        height: 100vh;
-        width: 100%;
-        margin: 0;
-    }
-
-    .container-sx{
-        height: 100vh;
-        width: 10%;
-    }
-
-    .tool{
-        display: none;
-    }
-
-    .notice{
-        display: none;
-    }
-
-    .find{
-        display: none;
-    }
-
-    .contacts{
-        height: 92vh;
-    }
-
-    .contact > div{
-        display: none;
-    }
-}
-
-@media screen and (max-width:480px){
-    .container-sx{
-        display: none;
-    }
-}
 
 /* SEZIONE DESTRA WEB APP */
 
 .container-dx{
-    background-color: lightcyan;
     width: 70%;
     height: 95vh;
 }
@@ -277,17 +243,81 @@ APPROCCIO DEKSTOP FIRST
 
 .write{
     height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-@media screen and (max-width:768px){
+.write-message{
+    border: none;
+    width: 750px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
-    .container-dx{
-    height: 100vh;
-    width: 100%;
+
+/* ****************************
+APPROCCIO DEKSTOP FIRST
+**************************** */
+
+
+@media screen and (max-width:768px) {
+
+    .container-webapp{
+        height: 100vh;
+        width: 100%;
+        margin: 0;
     }
 
+    .container-sx{
+        height: 100vh;
+        width: 10%;
+    }
+
+    .tool{
+        display: none;
+    }
+
+    .notice{
+        display: none;
+    }
+
+    .find{
+        display: none;
+    }
+
+    .contacts{
+        height: 92vh;
+    }
+
+    .contact > div{
+        display: none;
+    }
+
+    .container-dx{
+        height: 100vh;
+        width: 100%;
+    }
+    
     .message{
         height: 84vh;
         width: 100%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .container-sx{
+        display: none;
+    }
+
+    .send{
+        margin-left: 40px;
+        width: 300px;
+    }
+
+    .recived{
+        width: 300px;
     }
 }
